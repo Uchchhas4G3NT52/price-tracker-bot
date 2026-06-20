@@ -19,8 +19,7 @@ DEFAULT_URL = "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/in
 
 
 def run_check(url: str = None) -> None:
-    url = url or os.environ.get("TARGET_URL", DEFAULT_URL)
-
+    url = url or os.environ.get("TARGET_URL") or DEFAULT_URL
     init_db()
 
     html = fetch_html(url)
