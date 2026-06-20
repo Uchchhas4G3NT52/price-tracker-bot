@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+price_history.db
+.pytest_cache/
+*.egg-info/
